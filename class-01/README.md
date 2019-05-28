@@ -10,8 +10,8 @@ Welcome to Day 1 of Code 401: Java! We're excited to have you here. Today's focu
 - Welcome back!
 - Overview of Slack, Canvas, GitHub
 - Overview of course
-- Overview of Java variables, classes, objects
 - Review of the `main` method
+- Overview of Java variables, classes, objects
 - Lab intro
 
 ## Java Warmup
