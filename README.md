@@ -29,7 +29,9 @@ There are several types of assignments that are required for this course, and th
 * Prework: You should have already finished this; if not, you should reach out to your instructor, and finish any remaining items ASAP.
 
 #### Graded out of points
-* Code Challenges: Each code challenge is released at 5pm, to be worked on that night. The code challenge is due the next day by the start of lecture. You may resubmit code challenges for up to 10 days after the assignment is due; code challenges lock after 10 days.
+All assignments that are graded out of points lose 20% of available points if they are turned in late.
+
+* Code Challenges: Each code challenge is released at 4:30pm, to be worked on that night. The code challenge is due the next day by the start of lecture. You may resubmit code challenges for up to 10 days after the assignment is due; code challenges lock after 10 days.
 * Labs: Each lab is released at 5pm, and should be worked on the next day during lab time. The lab is due by the start of the following lecture. You may resubmit labs for up to 10 days after the assignment is due; labs lock after 10 days.
 
 ## Topics
