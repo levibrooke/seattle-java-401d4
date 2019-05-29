@@ -2,7 +2,7 @@
 
 This file contains details on what is expected when completing a whiteboard challenge. Please refer to the visual as a guideline to what content is required for each whiteboarding challenge.
 
-![Example Whiteboard Image](assets/DataStructuresWhiteboard.PNG)
+![Example Whiteboard Image](./DataStructuresWhiteboard.PNG)
 
 ## Overall Guidance on Whiteboard Workflow
 
