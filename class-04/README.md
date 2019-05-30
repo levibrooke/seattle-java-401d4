@@ -1,12 +1,23 @@
 # Class 4: Object Oriented Programming
 
 ## Agenda
-- Welcome, announcements
+- Announcements
+    - Don't forget about PPH tomorrow!
 - Code review
+    - Binary search
+    - Weather map, votes map
+    - Linter
 - Daily systems: Directories & Files
+- Whiteboarding demo ft. Michelle & Evan
 - Warmup questions
 - Lecture
+    - Classes and the things that go in them
+    - Basic data modeling
 - Lab intro
+    - Bitmap overview: it's basically a 2d array
+    - This lab is supposed to be hard! That's why it's a partnered lab, and you should feel free to discuss strategy in larger groups too.
+- Whiteboarding code challenges overview
+
 
 ## OOP Warmup
 
