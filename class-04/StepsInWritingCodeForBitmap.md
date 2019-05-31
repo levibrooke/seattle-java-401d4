@@ -10,5 +10,5 @@ Again, please take this as one good idea of how to make progress, not gospel tru
 6) Add a second transform, maybe getting fancier. Make sure my second transform works.
 7) Add the command line argument for which transform should be run. Make sure that works.
 8) Think about testing my transform methods with actual tests.
-9) Continue writing transforms.
-10) profit
+9) Continue writing transforms and tests.
+10) victory
