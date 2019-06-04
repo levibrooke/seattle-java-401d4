@@ -5,6 +5,7 @@ public class Warehouse {
     private long squareFootage;
     private long cubicFootage;
 
+    public Warehouse(){}
     public Warehouse(String address, long squareFootage, long cubicFootage) {
         this.address = address;
         this.squareFootage = squareFootage;
