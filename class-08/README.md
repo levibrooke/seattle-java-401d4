@@ -12,9 +12,11 @@
 - Lab intro
 
 ## Warmup Questions
+
 1. What is JSON? If I say "here is some JSON", what data type is that?
 2. In JavaScript, how do we deal with JSON data?
 3. In Node/JavaScript, if we need to use a new package (like `express`), what steps do we take?
+4. (somewhat unrelated) What's the difference between an application and a library?
 
 ## Lecture Notes
 
