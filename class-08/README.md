@@ -4,6 +4,7 @@
 - Announcements
   - Tomorrow's lab is optionally pair programming! You can pick your partner.
   - Labs/readings for next week are shifted; the numbers are a bit odd because of Career Coaching this Friday, but they all have correct due dates now.
+  - Michelle out next Friday, 6/14; Brian will be here to teach you about trees!
 - Code review
 - Daily Systems: the PATH
 - Warmup questions
