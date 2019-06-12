@@ -14,5 +14,8 @@ public class Runner {
     System.out.println("dequeue should give 3: " + pq.dequeue());
     System.out.println("dequeue should give 4: " + pq.dequeue());
     System.out.println("dequeue should give 5: " + pq.dequeue());
+    System.out.println("Going to try to dequeue, should break");
+    pq.dequeue();
+    System.out.println("IT DIDN'T BREAK YOU DID IT WRONG");
   }
 }
