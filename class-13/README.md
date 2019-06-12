@@ -8,6 +8,7 @@
 ## Agenda
 - Announcements
     - Brook will be here Friday! (And today, to watch!)
+    - Next Tuesday, TOTAL fridge cleanout (in preparation for market)
 - Code review
     - Stacks using two queues, again, with a code solution
     - AnimalShelter
