@@ -1,18 +1,18 @@
 # Class 13: Spring Views & Models
 
 ## Resources
-* [Our demo](https://github.com/mnfmnfm/seattle-java-401d2-deploy-demo)
 * [The Spring Initializr \[sic\]](https://start.spring.io/)
 * [Spring Guides: Serving Web Content](https://spring.io/guides/gs/serving-web-content/)
 * [Spring Static Resources](https://spring.io/blog/2013/12/19/serving-static-web-content-with-spring-boot)
 
 ## Agenda
 - Announcements
-    - How's project week prep?
+    - Brook will be here Friday! (And today, to watch!)
 - Code review
-    - Stacks using two queues
+    - Stacks using two queues, again, with a code solution
+    - AnimalShelter
     - Spring apps
-- Daily Systems: stdout, stderr, /dev/null
+- Daily Systems: stdout, stderr
 - Lecture
     - Adding Views to our MVC
         - @Controller vs @RestController
@@ -21,7 +21,6 @@
         - Defining schema
         - Defining repository interface & model class
         - Using repository interface in code
-        - Heroku considerations
 - Lab intro
 
 ## Warmup Question
