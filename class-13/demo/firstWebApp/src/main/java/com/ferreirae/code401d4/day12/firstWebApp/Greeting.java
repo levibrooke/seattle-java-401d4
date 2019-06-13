@@ -20,7 +20,7 @@ public class Greeting {
     String text;
 
     public Greeting() {}
-    public Greeting(String language, String text) {
+    public Greeting(String text, String language) {
         this.language = language;
         this.text = text;
     }
