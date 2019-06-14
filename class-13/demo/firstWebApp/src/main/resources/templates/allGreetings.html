@@ -7,7 +7,7 @@
     <ul>
         <li th:each="greeting : ${greetings}">
             <span th:text="${greeting.text}"></span>
-            (in <span th:text="${greeting.language}"></span>)
+            (in <span th:text="${greeting.language.nameInEnglish}"></span>)
         </li>
     </ul>
 </body>

@@ -1,9 +1,6 @@
 package com.ferreirae.code401d4.day12.firstWebApp;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 // hello, in English
 // hola, in Spanish
@@ -16,11 +13,14 @@ public class Greeting {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
-    String language;
+
+    // name of this variable matches mappedBy in Language.java
+    @ManyToOne
+    Language language;
     String text;
 
     public Greeting() {}
-    public Greeting(String text, String language) {
+    public Greeting(String text, Language language) {
         this.language = language;
         this.text = text;
     }
@@ -29,7 +29,7 @@ public class Greeting {
         return this.text;
     }
 
-    public String getLanguage() {
+    public Language getLanguage() {
         return this.language;
     }
 }
