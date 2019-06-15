@@ -1,8 +1,8 @@
 # Class 15: Trees
 
 ## Resources
-[Binary Trees](https://en.wikipedia.org/wiki/Binary_tree)
-[Binary Search Trees](https://en.wikipedia.org/wiki/Binary_search_tree)
+- [Binary Trees](https://en.wikipedia.org/wiki/Binary_tree)
+- [Binary Search Trees](https://en.wikipedia.org/wiki/Binary_search_tree)
 
 ## Agenda
 - Announcements
