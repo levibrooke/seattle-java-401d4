@@ -54,6 +54,7 @@ public class AnimalShelter {
         return catQueue.dequeue();
       }
     }
+    return null;
   }
 }
 
