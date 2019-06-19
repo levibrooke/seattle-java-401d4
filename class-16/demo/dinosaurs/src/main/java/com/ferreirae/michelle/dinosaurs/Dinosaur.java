@@ -24,7 +24,7 @@ public class Dinosaur {
         return species;
     }
 
-    public boolean isCarnivore() {
+    public boolean getIsCarnivore() {
         return isCarnivore;
     }
 

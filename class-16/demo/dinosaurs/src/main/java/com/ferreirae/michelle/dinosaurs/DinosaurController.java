@@ -53,6 +53,8 @@ public class DinosaurController {
         if (dino.getCreator().username.equals(p.getName())) {
             // if so, do the nice things
             m.addAttribute("dino", dino);
+            m.addAttribute("article",
+                    dino.species.matches("[AaEeIiOoUu].*") ? "An" : "A");
             return "dinosaur";
         } else {
            // otherwise, tell them no
