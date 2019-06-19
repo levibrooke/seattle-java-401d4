@@ -19,5 +19,8 @@
             </a>
         </li>
     </ul>
+    <div sec:authorize="isAuthenticated()">
+        Text visible only to authenticated users.
+    </div>
 </body>
 </html>

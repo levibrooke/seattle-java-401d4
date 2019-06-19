@@ -16,6 +16,9 @@
         <input name="password" />
         <input type="submit" />
     </form>
+    <div sec:authorize="isAuthenticated()">
+        Text visible only to authenticated users.
+    </div>
 
 </body>
 </html>
