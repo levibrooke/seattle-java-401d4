@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Rawr</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- executed by the browser -->
+    <link href="/styles.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Dinosaurs!</h1>
-    <h3>Welcome, <span th:text="${principal.name}"></span></h3>
+    <!--             directory/file   :: fragmentName -->
+    <div th:replace="fragments/header :: potato">...</div>
+    <h3>Welcome, <span th:text="${loggedInUser.username}"></span></h3>
+    <h4>Your dinosaurs</h4>
+    <ul>
+        <li th:each="dino : ${loggedInUser.dinosaurs}">
+            <a th:href="'/dinosaurs/' + ${dino.id}">
+                <span th:text="${dino.name}"></span>, a <span th:text="${dino.species}"></span>
+            </a>
+        </li>
+    </ul>
 </body>
 </html>
