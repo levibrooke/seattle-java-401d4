@@ -61,6 +61,7 @@ public class DinosaurController {
     }
 }
 
+// came from https://stackoverflow.com/questions/2066946/trigger-404-in-spring-mvc-controller
 @ResponseStatus(value = HttpStatus.FORBIDDEN)
 class DinosaurDoesNotBelongToYouException extends RuntimeException {
     public DinosaurDoesNotBelongToYouException(String s) {
