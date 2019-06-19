@@ -12,13 +12,7 @@
     <div th:replace="fragments/header :: potato">...</div>
     <h3>Welcome, <span th:text="${loggedInUser.username}"></span></h3>
     <h4>Your dinosaurs</h4>
-    <ul>
-        <li th:each="dino : ${loggedInUser.dinosaurs}">
-            <a th:href="'/dinosaurs/' + ${dino.id}">
-                <span th:text="${dino.name}"></span>, a <span th:text="${dino.species}"></span>
-            </a>
-        </li>
-    </ul>
+    <div th:replace="fragments/dinosaurs :: dinosaursList(dinosaurs=${loggedInUser.dinosaurs})"></div>
     <div sec:authorize="isAuthenticated()">
         Text visible only to authenticated users.
     </div>

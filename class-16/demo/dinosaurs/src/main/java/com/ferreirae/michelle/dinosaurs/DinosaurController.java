@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.servlet.view.RedirectView;
 
 import java.security.Principal;
+import java.util.List;
 
 @Controller
 public class DinosaurController {
@@ -55,13 +56,37 @@ public class DinosaurController {
             m.addAttribute("dino", dino);
             m.addAttribute("article",
                     dino.species.matches("[AaEeIiOoUu].*") ? "An" : "A");
+            AppUser loggedInUser = appUserRepository.findByUsername(p.getName());
+            List<Dinosaur> possibleFriends = loggedInUser.dinosaurs;
+            possibleFriends.remove(dino);
+            possibleFriends.removeAll(dino.friends);
+
+            m.addAttribute("possibleFriendDinos", possibleFriends);
             return "dinosaur";
         } else {
            // otherwise, tell them no
            throw new DinosaurDoesNotBelongToYouException("That dinosaur does not belong to you.");
         }
+    }
 
-
+    @PostMapping("/dinosaurs/{id}/friends")
+    public RedirectView addFriend(@PathVariable Long id, Long friend, Principal p, Model m) {
+        // we have the ID of two dinosaurs
+        // go get actual Dinosaur instances
+        Dinosaur currentDino = dinoRepository.findById(id).get();
+        Dinosaur newFriendDino = dinoRepository.findById(friend).get();
+        // use the principal: check both of the dinosaurs belong to the currently logged in user
+        if(!currentDino.creator.username.equals(p.getName()) || !newFriendDino.creator.username.equals(p.getName())) {
+            throw new DinosaurDoesNotBelongToYouException("You must own both dinosaurs to make them be friends.");
+        }
+        // make them be friends
+        currentDino.friends.add(newFriendDino);
+        newFriendDino.friends.add(currentDino);
+        // save! yes please omg
+        dinoRepository.save(currentDino);
+        dinoRepository.save(newFriendDino);
+        // redirect back to the current dino
+        return new RedirectView("/dinosaurs/" + id);
     }
 }
 
