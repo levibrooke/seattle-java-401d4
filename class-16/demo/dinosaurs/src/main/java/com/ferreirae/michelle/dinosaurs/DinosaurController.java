@@ -51,13 +51,15 @@ public class DinosaurController {
         Dinosaur dino = dinoRepository.findById(id).get();
         // check if that dinosaur belongs to the currently logged in user
         if (dino.getCreator().username.equals(p.getName())) {
+            // if so, do the nice things
             m.addAttribute("dino", dino);
             return "dinosaur";
         } else {
+           // otherwise, tell them no
            throw new DinosaurDoesNotBelongToYouException("That dinosaur does not belong to you.");
         }
-        // if so, do the nice things
-        // otherwise, tell them no
+
+
     }
 }
 
