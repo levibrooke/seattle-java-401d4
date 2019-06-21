@@ -31,6 +31,11 @@ use IntelliJ to implement the methods; make the boolean ones all return true
     public AuthenticationManager authenticationManagerBean() throws Exception {
         return super.authenticationManagerBean();
     }
+    
+    @Bean
+    public UserDetailsServiceImpl getUserDetailsService() {
+        return new UserDetailsServiceImpl();
+    }
 ```
 
 ## Step 6: registration page
