@@ -14,7 +14,7 @@ use IntelliJ to implement the methods; make the boolean ones all return true
 
 ## Step 5: WebSecurityConfig extends WebSecurityConfigurerAdapter
 
-- has a UserDetailsService
+- has an `@Autowired UserDetailsService userDetailsService;`
 - passwordEncoder bean
 - configure AuthManagerBuilder
     - `auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());`
